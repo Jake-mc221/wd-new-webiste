@@ -1,0 +1,209 @@
+import Navbar from "@/components/navbar";
+import Link from "next/link";
+import Footer from "@/components/footer";
+
+const services = [
+  { num: "01", title: "Patents",     img: "/1.jpg",  dark: true  },
+  { num: "02", title: "Trade Marks", img: "/2.png",  dark: false },
+  { num: "03", title: "Designs",     img: "/3.jpg",  dark: true  },
+  { num: "04", title: "Copyright",   img: "/4.jpg",  dark: false },
+];
+
+const features = [
+  {
+    title: "Experienced Attorneys",
+    desc: "Decades of specialist experience across all areas of IP law.",
+  },
+  {
+    title: "Clear, Practical Advice",
+    desc: "Actionable guidance tailored to your business goals and budget.",
+  },
+  {
+    title: "Global IP Protection",
+    desc: "International reach through our trusted attorney network.",
+  },
+];
+
+export default function Home() {
+  return (
+    <main className="bg-white text-foreground">
+      <Navbar />
+
+      {/* HERO — pt accounts for fixed navbar (64px) + breathing room (64px) */}
+      <section className="bg-navy relative overflow-hidden">
+        <div
+          className="absolute right-0 top-0 bottom-0 w-[38%] bg-white/[0.04]"
+          style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)" }}
+        />
+        <div className="max-w-5xl mx-auto px-6 pt-[128px] pb-16 relative">
+          <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
+            Intellectual Property · Commercial Law
+          </p>
+          <h1 className="font-serif text-[64px] font-normal text-white leading-[1.1] max-w-[640px] mb-5">
+            Protecting Your Ideas &amp; <em>Intellectual Property</em>
+          </h1>
+          <p className="text-sm text-blue-300 max-w-[440px] leading-[1.75] mb-8">
+            Strategic IP counsel across Sydney and Melbourne, trusted by
+            innovators, creators, and businesses worldwide.
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="/services"
+              className="bg-white text-navy px-6 py-3 rounded-md text-sm font-semibold"
+            >
+              Our Services
+            </Link>
+            <a
+              href="#contact"
+              className="border border-white/35 text-white px-6 py-3 rounded-md text-sm"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 mt-16 py-5">
+          <p className="text-xs text-white/60 text-center tracking-[0.12em]">
+            IP AND COMMERCIAL LAWYERS · SYDNEY AND MELBOURNE CBD
+          </p>
+        </div>
+      </section>
+
+      {/* OUR EXPERTISE */}
+      <section id="services" className="bg-surface py-16">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="mb-8">
+            <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-2">
+              Our Expertise
+            </p>
+            <h2 className="font-serif text-[32px] font-normal text-navy">
+              Trusted guidance with experience.
+            </h2>
+          </div>
+          <div className="grid grid-cols-4 gap-4">
+            {services.map((s) => (
+              <div
+                key={s.title}
+                className="rounded-xl overflow-hidden aspect-[3/4] relative"
+                style={{
+                  backgroundImage: `url(${s.img})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundColor: s.dark ? "#1e3a5f" : "#264d7e",
+                }}
+              >
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: s.dark
+                      ? "linear-gradient(to top, rgba(30,58,95,0.92) 40%, rgba(30,58,95,0.3) 100%)"
+                      : "linear-gradient(to top, rgba(38,77,126,0.92) 40%, rgba(38,77,126,0.3) 100%)",
+                  }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <span className="block text-[10px] font-mono tracking-[0.2em] text-white/40 mb-1.5">
+                    {s.num}
+                  </span>
+                  <span className="text-white text-base font-medium">{s.title}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT US */}
+      <section className="bg-white border-t border-line py-16">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-3">
+              About Us
+            </p>
+            <h2 className="font-serif text-[32px] font-normal text-navy mb-4">
+              Decades of IP expertise.
+            </h2>
+            <p className="text-sm text-slate leading-[1.8] mb-5">
+              Wallington Dummer provides practical and strategic intellectual
+              property advice to protect and grow your ideas, navigating complex
+              IP landscapes with clarity and confidence.
+            </p>
+            <a href="/firm" className="text-sm text-blue font-medium">
+              Meet our team →
+            </a>
+          </div>
+          <div className="border-l-[3px] border-blue pl-7">
+            <p className="font-serif text-xl text-navy italic leading-[1.65]">
+              "Protecting the ideas that shape tomorrow — with precision,
+              integrity, and passion."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="bg-white border-t border-line py-14">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-3 gap-5">
+          {features.map((f) => (
+            <div key={f.title} className="border border-line rounded-xl p-6">
+              <div className="w-10 h-10 bg-blue-light rounded-lg flex items-center justify-center mb-4">
+                <div className="w-4 h-4 border-2 border-blue rounded-sm" />
+              </div>
+              <p className="text-base font-semibold text-foreground mb-2">{f.title}</p>
+              <p className="text-sm text-slate leading-[1.6]">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="bg-navy py-16">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-3">
+              Get in Touch
+            </p>
+            <h2 className="font-serif text-[32px] font-normal text-white mb-3">
+              Ready to protect your IP?
+            </h2>
+            <p className="text-sm text-white/55 mb-6 leading-[1.75]">
+              Our team is ready to help. Reach out to our Sydney or Melbourne
+              office.
+            </p>
+            <a
+              href="mailto:info@wallingtondummer.com.au"
+              className="bg-white text-navy px-6 py-3 rounded-md text-sm font-semibold inline-block"
+            >
+              Email Us
+            </a>
+          </div>
+          <div className="grid grid-cols-2 gap-6">
+            <div>
+              <p className="text-xs tracking-[0.18em] text-blue-300 uppercase mb-3">
+                Sydney
+              </p>
+              <p className="text-sm text-white/60 leading-[1.9]">
+                Suite 1005
+                <br />
+                66 Hunter St
+                <br />
+                (02) 9221 1040
+              </p>
+            </div>
+            <div>
+              <p className="text-xs tracking-[0.18em] text-blue-300 uppercase mb-3">
+                Melbourne
+              </p>
+              <p className="text-sm text-white/60 leading-[1.9]">
+                Level 14
+                <br />
+                330 Collins St
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}
