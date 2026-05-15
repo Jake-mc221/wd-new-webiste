@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import Link from "next/link";
 import Footer from "@/components/footer";
+import { asset } from "@/lib/asset";
 
 const services = [
   { num: "01", title: "Patents",     img: "/1.jpg",  dark: true,  href: "/services/patents"         },
@@ -87,7 +88,7 @@ export default function Home() {
                 href={s.href}
                 className="group rounded-xl overflow-hidden aspect-[3/4] relative"
                 style={{
-                  backgroundImage: `url(${s.img})`,
+                  backgroundImage: `url(${asset(s.img)})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundColor: s.dark ? "#4a82c2" : "#5a92d2",

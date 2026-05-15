@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import Link from "next/link";
 import { team } from "@/app/firm/data";
 import Footer from "@/components/footer";
+import { asset } from "@/lib/asset";
 
 export default function FirmPage() {
   return (
@@ -55,7 +56,7 @@ export default function FirmPage() {
                 {/* Photo — clicking this navigates to profile */}
                 <Link href={`/firm/${person.slug}`} className="block aspect-[4/5] bg-navy relative overflow-hidden">
                   <img
-                    src={person.photo}
+                    src={asset(person.photo)}
                     alt={person.name}
                     className="absolute inset-0 w-full h-full object-cover object-center"
                   />

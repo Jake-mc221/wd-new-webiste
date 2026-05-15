@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { asset } from "@/lib/asset";
 
 export default function Navbar() {
   return (
@@ -7,7 +8,7 @@ export default function Navbar() {
 
         <Link href="/">
           <img
-            src="/logo3.png"
+            src={asset("/logo3.png")}
             alt="Wallington Dummer"
             className="h-12"
           />

@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import Link from "next/link";
 import { services } from "@/app/services/data";
 import Footer from "@/components/footer";
+import { asset } from "@/lib/asset";
 
 const stats = [
   { value: "25+", label: "Years of experience" },
@@ -55,7 +56,7 @@ export default function ServicesPage() {
                 {/* Background image — scales on hover */}
                 <div className="absolute inset-0 overflow-hidden rounded-2xl">
                   <img
-                    src={s.image}
+                    src={asset(s.image)}
                     alt={s.name}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />

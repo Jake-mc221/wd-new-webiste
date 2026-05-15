@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Link from "next/link";
 import { services } from "@/app/services/data";
 import Footer from "@/components/footer";
+import { asset } from "@/lib/asset";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -27,7 +28,7 @@ export default async function ServicePage({
       <section className="bg-navy relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src={service.image}
+            src={asset(service.image)}
             alt={service.name}
             className="w-full h-full object-cover opacity-20"
           />
@@ -55,7 +56,7 @@ export default async function ServicePage({
           {/* Floating image accent */}
           <div className="relative h-[280px] rounded-2xl overflow-hidden hidden lg:block">
             <img
-              src={service.image}
+              src={asset(service.image)}
               alt=""
               className="w-full h-full object-cover"
             />
@@ -162,7 +163,7 @@ export default async function ServicePage({
               >
                 <div className="absolute inset-0 overflow-hidden rounded-xl">
                   <img
-                    src={s.image}
+                    src={asset(s.image)}
                     alt={s.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

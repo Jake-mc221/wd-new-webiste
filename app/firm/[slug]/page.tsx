@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Link from "next/link";
 import { team } from "@/app/firm/data";
 import Footer from "@/components/footer";
+import { asset } from "@/lib/asset";
 
 export function generateStaticParams() {
   return team.map((p) => ({ slug: p.slug }));
@@ -29,7 +30,7 @@ export default async function ProfilePage({
             {/* Photo */}
             <div className="aspect-[3/4] bg-navy-light rounded-t-xl overflow-hidden relative">
               <img
-                src={person.photo}
+                src={asset(person.photo)}
                 alt={person.name}
                 className="absolute inset-0 w-full h-full object-cover object-top"
               />
