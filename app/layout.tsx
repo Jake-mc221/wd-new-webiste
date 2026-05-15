@@ -21,7 +21,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Wallington Dummer — IP & Commercial Lawyers",
   description:
-    "Intellectual property and commercial lawyers with CBD offices in Sydney and Melbourne.",
+    "Intellectual property and commercial lawyers based in Sydney CBD.",
 };
  
 export default function RootLayout({

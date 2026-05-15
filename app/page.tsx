@@ -3,10 +3,10 @@ import Link from "next/link";
 import Footer from "@/components/footer";
 
 const services = [
-  { num: "01", title: "Patents",     img: "/1.jpg",  dark: true  },
-  { num: "02", title: "Trade Marks", img: "/2.png",  dark: false },
-  { num: "03", title: "Designs",     img: "/3.jpg",  dark: true  },
-  { num: "04", title: "Copyright",   img: "/4.jpg",  dark: false },
+  { num: "01", title: "Patents",     img: "/1.jpg",  dark: true,  href: "/services/patents"         },
+  { num: "02", title: "Trade Marks", img: "/2.png",  dark: false, href: "/services/trade-marks"     },
+  { num: "03", title: "Designs",     img: "/3.jpg",  dark: true,  href: "/services/designs"         },
+  { num: "04", title: "Copyright",   img: "/4.jpg",  dark: false, href: "/services"                 },
 ];
 
 const features = [
@@ -43,7 +43,7 @@ export default function Home() {
             Protecting Your Ideas &amp; <em>Intellectual Property</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[440px] leading-[1.75] mb-8">
-            Strategic IP counsel across Sydney and Melbourne, trusted by
+            Strategic IP counsel across Sydney, trusted by
             innovators, creators, and businesses worldwide.
           </p>
           <div className="flex gap-4">
@@ -64,7 +64,7 @@ export default function Home() {
 
         <div className="border-t border-white/10 mt-16 py-5">
           <p className="text-xs text-white/60 text-center tracking-[0.12em]">
-            IP AND COMMERCIAL LAWYERS · SYDNEY AND MELBOURNE CBD
+            IP AND COMMERCIAL LAWYERS · SYDNEY CBD
           </p>
         </div>
       </section>
@@ -82,31 +82,35 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-4 gap-4">
             {services.map((s) => (
-              <div
+              <Link
                 key={s.title}
-                className="rounded-xl overflow-hidden aspect-[3/4] relative"
+                href={s.href}
+                className="group rounded-xl overflow-hidden aspect-[3/4] relative"
                 style={{
                   backgroundImage: `url(${s.img})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  backgroundColor: s.dark ? "#1e3a5f" : "#264d7e",
+                  backgroundColor: s.dark ? "#4a82c2" : "#5a92d2",
                 }}
               >
                 <div
-                  className="absolute inset-0"
+                  className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-80"
                   style={{
                     background: s.dark
-                      ? "linear-gradient(to top, rgba(30,58,95,0.92) 40%, rgba(30,58,95,0.3) 100%)"
-                      : "linear-gradient(to top, rgba(38,77,126,0.92) 40%, rgba(38,77,126,0.3) 100%)",
+                      ? "linear-gradient(to top, rgba(74,130,194,0.92) 40%, rgba(74,130,194,0.3) 100%)"
+                      : "linear-gradient(to top, rgba(90,146,210,0.92) 40%, rgba(90,146,210,0.3) 100%)",
                   }}
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-5">
+                <div className="absolute bottom-0 left-0 right-0 p-5 translate-y-1 group-hover:translate-y-0 transition-transform duration-300">
                   <span className="block text-[10px] font-mono tracking-[0.2em] text-white/40 mb-1.5">
                     {s.num}
                   </span>
                   <span className="text-white text-base font-medium">{s.title}</span>
+                  <span className="block text-xs text-white/60 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Learn more →
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -166,8 +170,7 @@ export default function Home() {
               Ready to protect your IP?
             </h2>
             <p className="text-sm text-white/55 mb-6 leading-[1.75]">
-              Our team is ready to help. Reach out to our Sydney or Melbourne
-              office.
+              Our team is ready to help. Reach out to our Sydney office.
             </p>
             <a
               href="mailto:info@wallingtondummer.com.au"
@@ -187,16 +190,6 @@ export default function Home() {
                 66 Hunter St
                 <br />
                 (02) 9221 1040
-              </p>
-            </div>
-            <div>
-              <p className="text-xs tracking-[0.18em] text-blue-300 uppercase mb-3">
-                Melbourne
-              </p>
-              <p className="text-sm text-white/60 leading-[1.9]">
-                Level 14
-                <br />
-                330 Collins St
               </p>
             </div>
           </div>

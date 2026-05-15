@@ -103,7 +103,7 @@ export const faqs: FaqCategory[] = [
       },
       {
         q: "Where are your offices?",
-        a: "Our principal office is located at Suite 1005, 66 Hunter Street, Sydney NSW 2000. We can be reached by phone on (02) 9221 1040 or by email at mail2@wallington-dummer.com. We also serve clients in Melbourne and can arrange meetings at a location convenient to you.",
+        a: "Our office is located at Suite 1005, 66 Hunter Street, Sydney NSW 2000. We can be reached by phone on (02) 9221 1040 or by email at mail2@wallington-dummer.com.",
       },
       {
         q: "What industries do you work with?",

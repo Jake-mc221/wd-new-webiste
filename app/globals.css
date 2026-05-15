@@ -12,10 +12,11 @@
   --font-mono:  var(--font-geist-mono);
   --font-serif: var(--font-playfair);
  
-  --color-navy:       #1e3a5f;
-  --color-navy-light: #264d7e;
-  --color-blue:       #2563eb;
-  --color-blue-light: #eff6ff;
+  --color-navy:       #4a82c2;
+  --color-navy-light: #5a92d2;
+  --color-blue:       #3a72b2;
+  --color-blue-300:   #d0e8f8;
+  --color-blue-light: #eef5fc;
   --color-slate:      #64748b;
   --color-surface:    #f8fafc;
   --color-line:       #e2e8f0;

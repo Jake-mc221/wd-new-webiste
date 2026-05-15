@@ -12,7 +12,10 @@ export default function FaqAccordion({ categories }: { categories: FaqCategory[]
     <div className="space-y-12">
       {categories.map((cat) => (
         <div key={cat.category}>
-          <h2 className="font-serif text-[22px] font-normal text-navy mb-4 pb-4 border-b-2 border-blue/20">
+          <h2
+            id={cat.category.toLowerCase().replace(/[^a-z0-9]/g, "-")}
+            className="font-serif text-[22px] font-normal text-navy mb-4 pb-4 border-b-2 border-blue/20 scroll-mt-32"
+          >
             {cat.category}
           </h2>
           <div className="space-y-0">

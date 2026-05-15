@@ -10,10 +10,6 @@ export default function Navbar() {
             src="/logo3.png"
             alt="Wallington Dummer"
             className="h-12"
-            style={{
-              filter:
-                "brightness(0) saturate(100%) invert(26%) sepia(55%) saturate(950%) hue-rotate(188deg) brightness(103%) contrast(90%)",
-            }}
           />
         </Link>
 

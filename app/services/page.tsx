@@ -6,7 +6,7 @@ import Footer from "@/components/footer";
 const stats = [
   { value: "25+", label: "Years of experience" },
   { value: "4",   label: "IP disciplines" },
-  { value: "2",   label: "CBD locations" },
+  { value: "1",   label: "CBD location" },
   { value: "∞",   label: "Global reach" },
 ];
 
@@ -36,7 +36,7 @@ export default function ServicesPage() {
         </div>
         <div className="border-t border-white/10 py-5">
           <p className="text-xs text-white/60 text-center tracking-[0.12em]">
-            IP AND COMMERCIAL LAWYERS · SYDNEY AND MELBOURNE CBD
+            IP AND COMMERCIAL LAWYERS · SYDNEY CBD
           </p>
         </div>
       </section>
@@ -94,21 +94,21 @@ export default function ServicesPage() {
       </section>
 
       {/* STATS STRIP */}
-      <section className="bg-navy py-14">
+      <section className="bg-white border-t border-line py-14">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="font-serif text-[48px] font-normal text-white leading-none mb-2">
+              <p className="font-serif text-[48px] font-normal text-navy leading-none mb-2">
                 {s.value}
               </p>
-              <p className="text-xs tracking-[0.12em] uppercase text-blue-300">{s.label}</p>
+              <p className="text-xs tracking-[0.12em] uppercase text-slate">{s.label}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* WHY IP MATTERS */}
-      <section className="bg-white border-t border-line py-16">
+      <section className="bg-surface border-t border-line py-16">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-3">

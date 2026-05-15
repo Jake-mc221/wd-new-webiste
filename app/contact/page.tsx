@@ -12,14 +12,6 @@ const offices = [
     email: "mail2@wallington-dummer.com",
     maps: "https://maps.google.com/?q=66+Hunter+Street+Sydney+NSW+2000",
   },
-  {
-    city: "Melbourne",
-    address: "Level 14\n330 Collins Street\nMelbourne VIC 3000",
-    phone: null,
-    fax: null,
-    email: "mail2@wallington-dummer.com",
-    maps: "https://maps.google.com/?q=330+Collins+Street+Melbourne+VIC+3000",
-  },
 ];
 
 export default function ContactPage() {
@@ -47,7 +39,7 @@ export default function ContactPage() {
         </div>
         <div className="border-t border-white/10 py-5">
           <p className="text-xs text-white/60 text-center tracking-[0.12em]">
-            IP AND COMMERCIAL LAWYERS · SYDNEY AND MELBOURNE CBD
+            IP AND COMMERCIAL LAWYERS · SYDNEY CBD
           </p>
         </div>
       </section>
@@ -146,37 +138,21 @@ export default function ContactPage() {
               Our Offices
             </p>
             <h2 className="font-serif text-[32px] font-normal text-navy">
-              Find us in Sydney and Melbourne.
+              Find us in Sydney.
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-6">
-            <div>
-              <p className="text-sm font-semibold text-navy mb-3">Sydney — Suite 1005, 66 Hunter Street</p>
-              <div className="rounded-xl overflow-hidden border border-line h-[280px]">
-                <iframe
-                  src="https://www.google.com/maps?q=66+Hunter+Street,+Sydney+NSW+2000,+Australia&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
-            </div>
-            <div>
-              <p className="text-sm font-semibold text-navy mb-3">Melbourne — Level 14, 330 Collins Street</p>
-              <div className="rounded-xl overflow-hidden border border-line h-[280px]">
-                <iframe
-                  src="https://www.google.com/maps?q=330+Collins+Street,+Melbourne+VIC+3000,+Australia&output=embed"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+          <div>
+            <p className="text-sm font-semibold text-navy mb-3">Suite 1005, 66 Hunter Street, Sydney NSW 2000</p>
+            <div className="rounded-xl overflow-hidden border border-line h-[360px]">
+              <iframe
+                src="https://www.google.com/maps?q=66+Hunter+Street,+Sydney+NSW+2000,+Australia&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>
