@@ -35,7 +35,7 @@ export default async function ServicePage({
           <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/70" />
         </div>
 
-        <div className="max-w-5xl mx-auto px-6 pt-[128px] pb-16 relative grid grid-cols-[3fr_2fr] gap-12 items-center">
+        <div className="max-w-5xl mx-auto px-6 pt-[100px] md:pt-[128px] pb-16 relative grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12 items-center">
           <div>
             <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
               {service.tagline}
@@ -44,7 +44,7 @@ export default async function ServicePage({
               <span className="font-mono text-[13px] tracking-widest text-white/25 mt-3">
                 {service.num}
               </span>
-              <h1 className="font-serif text-[56px] font-normal text-white leading-[1.1]">
+              <h1 className="font-serif text-[32px] md:text-[56px] font-normal text-white leading-[1.1]">
                 {service.name}
               </h1>
             </div>
@@ -98,7 +98,7 @@ export default async function ServicePage({
               Our {service.name} services.
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-x-12 gap-y-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
             {service.offerings.map((item, i) => (
               <div key={i} className="flex gap-4 py-4 border-b border-line">
                 <span className="text-blue mt-0.5 shrink-0">
@@ -126,7 +126,7 @@ export default async function ServicePage({
                 What to keep in mind.
               </h2>
             </div>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {service.tips.map((tip, i) => (
                 <div key={i} className="bg-white border border-line rounded-xl p-6">
                   <div className="w-8 h-8 bg-blue-light rounded-lg flex items-center justify-center mb-4">
@@ -153,7 +153,7 @@ export default async function ServicePage({
               Explore other areas.
             </h2>
           </div>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {others.map((s) => (
               <Link
                 key={s.slug}

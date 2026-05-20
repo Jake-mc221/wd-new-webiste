@@ -1,0 +1,40 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+
+export default function MobileMenu() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="md:hidden">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="p-2 text-slate hover:text-navy transition-colors"
+        aria-label="Toggle menu"
+      >
+        {open ? (
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        ) : (
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        )}
+      </button>
+
+      {open && (
+        <div className="absolute top-16 left-0 right-0 bg-white border-b border-line shadow-lg z-50">
+          <nav className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-1">
+            <Link href="/"        onClick={() => setOpen(false)} className="py-3 border-b border-line text-sm font-medium text-foreground">Home</Link>
+            <Link href="/firm"    onClick={() => setOpen(false)} className="py-3 border-b border-line text-sm text-slate hover:text-navy transition-colors">Our Firm</Link>
+            <Link href="/services" onClick={() => setOpen(false)} className="py-3 border-b border-line text-sm text-slate hover:text-navy transition-colors">Services</Link>
+            <Link href="/faq"     onClick={() => setOpen(false)} className="py-3 border-b border-line text-sm text-slate hover:text-navy transition-colors">FAQ</Link>
+            <Link href="/contact" onClick={() => setOpen(false)} className="py-3 text-sm text-slate hover:text-navy transition-colors">Contact Us</Link>
+          </nav>
+        </div>
+      )}
+    </div>
+  );
+}

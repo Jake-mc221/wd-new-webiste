@@ -19,7 +19,7 @@ export default function FaqPage() {
           <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
             FAQ
           </p>
-          <h1 className="font-serif text-[56px] font-normal text-white leading-[1.1] max-w-[580px] mb-5">
+          <h1 className="font-serif text-[32px] md:text-[56px] font-normal text-white leading-[1.1] max-w-[580px] mb-5">
             Answers to your <em>most common questions.</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[440px] leading-[1.75]">
@@ -53,7 +53,7 @@ export default function FaqPage() {
 
       {/* FAQ CONTENT */}
       <section className="bg-white py-16">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-[1fr_320px] gap-16 items-start">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[1fr_320px] gap-16 items-start">
 
           {/* Accordion */}
           <div>
@@ -61,7 +61,7 @@ export default function FaqPage() {
           </div>
 
           {/* Sidebar */}
-          <div className="sticky top-36 space-y-5">
+          <div className="hidden md:block sticky top-36 space-y-5">
             <div className="bg-navy rounded-xl p-6">
               <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-3">
                 Still have questions?

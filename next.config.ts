@@ -1,15 +1,14 @@
 import type { NextConfig } from "next";
 
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/wd-new-webiste',
-  assetPrefix: '/wd-new-webiste/',
+  basePath: isProd ? '/wd-new-webiste' : '',
+  assetPrefix: isProd ? '/wd-new-webiste/' : '',
   images: { unoptimized: true },
-  env: {
-    NEXT_PUBLIC_BASE_PATH: '/wd-new-webiste',
-  },
 }
 
 module.exports = nextConfig

@@ -19,7 +19,7 @@ export default function FirmPage() {
           <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
             Our Firm
           </p>
-          <h1 className="font-serif text-[48px] font-normal text-white leading-[1.1] max-w-[540px] mb-5">
+          <h1 className="font-serif text-[32px] md:text-[48px] font-normal text-white leading-[1.1] max-w-[540px] mb-5">
             Meet the team behind <em>Wallington Dummer</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[460px] leading-[1.75]">
@@ -47,7 +47,7 @@ export default function FirmPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {team.map((person) => (
               <div
                 key={person.slug}
@@ -104,7 +104,7 @@ export default function FirmPage() {
 
       {/* FIRM DESCRIPTION */}
       <section className="bg-white border-t border-line py-16">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 gap-12 items-start">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-3">
               Our Approach

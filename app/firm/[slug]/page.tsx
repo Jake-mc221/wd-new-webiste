@@ -25,7 +25,7 @@ export default async function ProfilePage({
       {/* HERO */}
       <section className="bg-navy">
         <div className="max-w-5xl mx-auto px-6 pt-[88px] pb-0">
-          <div className="grid grid-cols-[2fr_3fr] gap-10 items-end">
+          <div className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-10 items-end">
 
             {/* Photo */}
             <div className="aspect-[3/4] bg-navy-light rounded-t-xl overflow-hidden relative">
@@ -42,7 +42,7 @@ export default async function ProfilePage({
                 {person.title}
               </p>
               <div className="flex items-baseline gap-3 mb-1">
-                <h1 className="font-serif text-[42px] font-normal text-white leading-tight">
+                <h1 className="font-serif text-[28px] md:text-[42px] font-normal text-white leading-tight">
                   {person.name}
                 </h1>
                 <span className="text-blue-300 text-sm font-medium shrink-0">
@@ -127,7 +127,7 @@ export default async function ProfilePage({
         <div className="max-w-5xl mx-auto px-6 space-y-14">
 
           <div>
-            <div className="grid grid-cols-[200px_1fr] gap-8 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2 md:gap-8 items-start">
               <h3 className="text-base font-semibold text-navy pt-1">Qualifications</h3>
               <div className="space-y-3">
                 {person.qualifications.map((q) => (
@@ -138,7 +138,7 @@ export default async function ProfilePage({
           </div>
 
           <div className="border-t border-line pt-14">
-            <div className="grid grid-cols-[200px_1fr] gap-8 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2 md:gap-8 items-start">
               <h3 className="text-base font-semibold text-navy pt-1">Memberships</h3>
               <div className="space-y-3">
                 {person.memberships.map((m) => (

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { asset } from "@/lib/asset";
+import MobileMenu from "@/components/mobile-menu";
 
 export default function Navbar() {
   return (
@@ -14,6 +15,7 @@ export default function Navbar() {
           />
         </Link>
 
+        <MobileMenu />
         <div className="hidden md:flex items-center gap-6 text-sm text-slate">
           <Link href="/" className="text-foreground font-medium">Home</Link>
           <Link href="/firm" className="hover:text-navy transition-colors">Our Firm</Link>

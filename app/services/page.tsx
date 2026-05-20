@@ -26,7 +26,7 @@ export default function ServicesPage() {
           <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
             Our Services
           </p>
-          <h1 className="font-serif text-[56px] font-normal text-white leading-[1.1] max-w-[600px] mb-5">
+          <h1 className="font-serif text-[32px] md:text-[56px] font-normal text-white leading-[1.1] max-w-[600px] mb-5">
             Comprehensive IP protection, from <em>concept to commercialisation.</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[460px] leading-[1.75]">
@@ -45,7 +45,7 @@ export default function ServicesPage() {
       {/* SERVICE CARDS */}
       <section className="bg-surface py-16">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {services.map((s, i) => (
               <Link
                 key={s.slug}
@@ -96,7 +96,7 @@ export default function ServicesPage() {
 
       {/* STATS STRIP */}
       <section className="bg-white border-t border-line py-14">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-4 gap-8">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
               <p className="font-serif text-[48px] font-normal text-navy leading-none mb-2">
@@ -110,7 +110,7 @@ export default function ServicesPage() {
 
       {/* WHY IP MATTERS */}
       <section className="bg-surface border-t border-line py-16">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 gap-16 items-center">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-3">
               Why it matters

@@ -25,7 +25,7 @@ export const team: TeamMember[] = [
     role: "Patent & Trade Mark Attorney",
     credentials: "BE(Elec), FIPTA",
     initials: "PD",
-    photo: "/peter-dummer.png",
+    photo: "/peter2.png",
     linkedin: "https://www.linkedin.com/in/peter-dummer-wallington/",
     location: "Sydney",
     phone: "(02) 9221 1040",

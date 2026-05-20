@@ -29,7 +29,7 @@ export default function ContactPage() {
           <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
             Contact Us
           </p>
-          <h1 className="font-serif text-[56px] font-normal text-white leading-[1.1] max-w-[560px] mb-5">
+          <h1 className="font-serif text-[32px] md:text-[56px] font-normal text-white leading-[1.1] max-w-[560px] mb-5">
             Let's talk about <em>protecting your ideas.</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[440px] leading-[1.75]">
@@ -46,7 +46,7 @@ export default function ContactPage() {
 
       {/* FORM + DETAILS */}
       <section className="bg-surface py-16">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-[3fr_2fr] gap-12">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12">
 
           {/* Form */}
           <div className="bg-white border border-line rounded-2xl p-8">
@@ -169,7 +169,7 @@ export default function ContactPage() {
               How we work with new clients.
             </h2>
           </div>
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               {
                 num: "01",

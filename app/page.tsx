@@ -36,18 +36,18 @@ export default function Home() {
           className="absolute right-0 top-0 bottom-0 w-[38%] bg-white/[0.04]"
           style={{ clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)" }}
         />
-        <div className="max-w-5xl mx-auto px-6 pt-[128px] pb-16 relative">
+        <div className="max-w-5xl mx-auto px-6 pt-[100px] md:pt-[128px] pb-16 relative">
           <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
             Intellectual Property · Commercial Law
           </p>
-          <h1 className="font-serif text-[64px] font-normal text-white leading-[1.1] max-w-[640px] mb-5">
+          <h1 className="font-serif text-[38px] md:text-[64px] font-normal text-white leading-[1.1] max-w-[640px] mb-5">
             Protecting Your Ideas &amp; <em>Intellectual Property</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[440px] leading-[1.75] mb-8">
             Strategic IP counsel across Sydney, trusted by
             innovators, creators, and businesses worldwide.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap gap-4">
             <Link
               href="/services"
               className="bg-white text-navy px-6 py-3 rounded-md text-sm font-semibold"
@@ -81,7 +81,7 @@ export default function Home() {
               Trusted guidance with experience.
             </h2>
           </div>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {services.map((s) => (
               <Link
                 key={s.title}
@@ -119,7 +119,7 @@ export default function Home() {
 
       {/* ABOUT US */}
       <section className="bg-white border-t border-line py-16">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 gap-12 items-center">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-3">
               About Us
@@ -147,7 +147,7 @@ export default function Home() {
 
       {/* WHY CHOOSE US */}
       <section className="bg-white border-t border-line py-14">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-3 gap-5">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-5">
           {features.map((f) => (
             <div key={f.title} className="border border-line rounded-xl p-6">
               <div className="w-10 h-10 bg-blue-light rounded-lg flex items-center justify-center mb-4">
@@ -162,7 +162,7 @@ export default function Home() {
 
       {/* CONTACT */}
       <section id="contact" className="bg-navy py-16">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 gap-12 items-center">
+        <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-3">
               Get in Touch
