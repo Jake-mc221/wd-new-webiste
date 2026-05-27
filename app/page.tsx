@@ -128,7 +128,7 @@ export default function Home() {
               Decades of IP expertise.
             </h2>
             <p className="text-sm text-slate leading-[1.8] mb-5">
-              Wallington Dummer provides practical and strategic intellectual
+              Wallington-Dummer provides practical and strategic intellectual
               property advice to protect and grow your ideas, navigating complex
               IP landscapes with clarity and confidence.
             </p>

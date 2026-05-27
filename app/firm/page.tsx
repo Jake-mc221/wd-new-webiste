@@ -20,7 +20,7 @@ export default function FirmPage() {
             Our Firm
           </p>
           <h1 className="font-serif text-[32px] md:text-[48px] font-normal text-white leading-[1.1] max-w-[540px] mb-5">
-            Meet the team behind <em>Wallington Dummer</em>
+            Meet the team behind <em>Wallington-Dummer</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[460px] leading-[1.75]">
             A dynamic Australian patent and trade mark attorney firm, established
@@ -43,7 +43,7 @@ export default function FirmPage() {
               Our People
             </p>
             <h2 className="font-serif text-[32px] font-normal text-navy">
-              Experienced across all areas of IP law.
+              Experienced across all areas of IP.
             </h2>
           </div>
 
