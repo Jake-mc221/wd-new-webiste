@@ -13,7 +13,7 @@ const services = [
 const features = [
   {
     title: "Experienced Attorneys",
-    desc: "Decades of specialist experience across all areas of IP law.",
+    desc: "Decades of specialist experience across all areas of IP.",
   },
   {
     title: "Clear, Practical Advice",
@@ -54,12 +54,12 @@ export default function Home() {
             >
               Our Services
             </Link>
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="border border-white/35 text-white px-6 py-3 rounded-md text-sm"
             >
               Get in Touch
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -160,6 +160,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ASSOCIATIONS */}
+      <section className="bg-surface border-t border-line py-12">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-xs tracking-[0.18em] uppercase text-slate/50 font-semibold text-center mb-8">
+            Professional Memberships
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { abbr: "IPSANZ", name: "Intellectual Property Society of Australia and New Zealand" },
+              { abbr: "INTA",   name: "International Trademark Association" },
+              { abbr: "IPTA",   name: "Institute of Patent and Trade Mark Attorneys of Australia" },
+              { abbr: "AIPPI",  name: "International Association for the Protection of Intellectual Property" },
+            ].map((assoc) => (
+              <div
+                key={assoc.abbr}
+                className="flex flex-col items-center justify-center text-center border border-line rounded-xl p-6 bg-white hover:border-navy/20 hover:shadow-sm transition-all duration-200"
+              >
+                <span className="font-serif text-[22px] font-normal text-navy mb-2">{assoc.abbr}</span>
+                <span className="text-[10px] text-slate/60 leading-[1.6] tracking-wide">{assoc.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section id="contact" className="bg-navy py-16">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -174,7 +199,7 @@ export default function Home() {
               Our team is ready to help. Reach out to our Sydney office.
             </p>
             <a
-              href="mailto:info@wallingtondummer.com.au"
+              href="mailto:mail2@wallington-dummer.com"
               className="bg-white text-navy px-6 py-3 rounded-md text-sm font-semibold inline-block"
             >
               Email Us

@@ -30,7 +30,7 @@ export default function ServicesPage() {
             Comprehensive IP protection, from <em>concept to commercialisation.</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[460px] leading-[1.75]">
-            Wallington Dummer provides a full range of IP services spanning the
+            Wallington-Dummer provides a full range of IP services spanning the
             entire intellectual property life cycle — patents, trade marks,
             designs and plant breeder's rights.
           </p>

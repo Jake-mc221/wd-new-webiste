@@ -114,7 +114,7 @@ export default function FirmPage() {
             </h2>
             <div className="space-y-4 text-sm text-slate leading-[1.8]">
               <p>
-                Wallington Dummer provides practical and strategic intellectual
+                Wallington-Dummer provides practical and strategic intellectual
                 property advice to protect and grow your ideas, navigating complex
                 IP landscapes with clarity and confidence.
               </p>
