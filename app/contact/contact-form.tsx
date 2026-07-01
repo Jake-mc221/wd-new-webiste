@@ -131,7 +131,7 @@ export default function ContactForm() {
       </div>
 
       <p className="text-xs text-slate/50 leading-relaxed">
-        By submitting this form you agree to be contacted by Wallington Dummer in relation to your enquiry.
+        By submitting this form you agree to be contacted by Wallington-Dummer in relation to your enquiry.
         Your information will not be shared with third parties.
       </p>
 

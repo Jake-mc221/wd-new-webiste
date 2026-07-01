@@ -124,7 +124,7 @@ export default function ServicesPage() {
               brand, and replicate your designs — often legally.
             </p>
             <p className="text-sm text-slate leading-[1.85] mb-6">
-              Wallington Dummer works with clients from their first idea through to
+              Wallington-Dummer works with clients from their first idea through to
               international commercialisation, providing practical, cost-effective advice
               tailored to real business objectives.
             </p>

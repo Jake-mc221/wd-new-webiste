@@ -11,7 +11,7 @@ export const faqs: FaqCategory[] = [
       },
       {
         q: "Do you offer a free initial consultation?",
-        a: "Yes. Wallington Dummer offers a complimentary initial consultation for all new clients. This gives you the opportunity to discuss your situation with one of our attorneys, understand your options, and receive an honest assessment of whether and how IP protection applies to your circumstances — at no cost and with no obligation.",
+        a: "Yes. Wallington-Dummer offers a complimentary initial consultation for all new clients. This gives you the opportunity to discuss your situation with one of our attorneys, understand your options, and receive an honest assessment of whether and how IP protection applies to your circumstances — at no cost and with no obligation.",
       },
       {
         q: "How do I know which type of IP protection I need?",

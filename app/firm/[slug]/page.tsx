@@ -51,7 +51,7 @@ export default async function ProfilePage({
               </div>
               <p className="text-base text-white/70 mb-1">{person.role}</p>
               <p className="text-sm text-white/50 mb-6">
-                Wallington Dummer · {person.location}
+                Wallington-Dummer · {person.location}
               </p>
 
               <div className="space-y-1.5 mb-8">

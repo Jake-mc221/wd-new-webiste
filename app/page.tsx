@@ -10,6 +10,21 @@ const services = [
   { num: "04", title: "Copyright",   img: "/4.jpg",  dark: false, href: "/services"                 },
 ];
 
+const brandLogos = [
+  "RA-LOGO.png",
+  "Stormseal-e1477032471234.png",
+  "allshelter-logo-col.png",
+  "probus-logo.png",
+  "pink-poppy-logo.png",
+  "motoman-logo.png",
+  "tuffa-logo.png",
+  "nars-logo.png",
+  "kohnkes-own-logo.png",
+  "laura-mercier-logo.png",
+  "hikvision-logo.png",
+  "downloadsa.png",
+];
+
 const features = [
   {
     title: "Experienced Attorneys",
@@ -38,13 +53,13 @@ export default function Home() {
         />
         <div className="max-w-5xl mx-auto px-6 pt-[100px] md:pt-[128px] pb-16 relative">
           <p className="text-xs tracking-[0.18em] uppercase text-blue-300 font-semibold mb-4">
-            Intellectual Property · Commercial Law
+            Intellectual Property
           </p>
           <h1 className="font-serif text-[38px] md:text-[64px] font-normal text-white leading-[1.1] max-w-[640px] mb-5">
-            Protecting Your Ideas &amp; <em>Intellectual Property</em>
+            Secure, Protect, Build, <em>Maximise Your IP</em>
           </h1>
           <p className="text-sm text-blue-300 max-w-[440px] leading-[1.75] mb-8">
-            Strategic IP counsel across Sydney, trusted by
+            Trusted by
             innovators, creators, and businesses worldwide.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -65,7 +80,7 @@ export default function Home() {
 
         <div className="border-t border-white/10 mt-16 py-5">
           <p className="text-xs text-white/60 text-center tracking-[0.12em]">
-            IP AND COMMERCIAL LAWYERS · SYDNEY CBD
+            SYDNEY CBD
           </p>
         </div>
       </section>
@@ -157,6 +172,29 @@ export default function Home() {
               <p className="text-sm text-slate leading-[1.6]">{f.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* BRANDS */}
+      <section className="bg-surface border-t border-line py-16">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-xs tracking-[0.18em] uppercase text-slate/50 font-semibold text-center mb-10">
+            A selection of brands we have worked with
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {brandLogos.map((logo) => (
+              <div
+                key={logo}
+                className="h-24 flex items-center justify-center p-6"
+              >
+                <img
+                  src={asset(`/comp_logos/${logo}`)}
+                  alt=""
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

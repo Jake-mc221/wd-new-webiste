@@ -5,7 +5,7 @@ export default function Footer() {
         {/* Top row */}
         <div className="flex justify-between items-center pb-6 border-b border-white/10">
           <span className="text-sm text-white/50">
-            © {new Date().getFullYear()} Wallington Dummer
+            © {new Date().getFullYear()} Wallington-Dummer
           </span>
           <div className="flex gap-5 text-sm text-white/50">
             <a href="#" className="hover:text-white/80 transition-colors">Privacy Policy</a>

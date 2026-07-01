@@ -76,10 +76,11 @@ export const team: TeamMember[] = [
     phone: "(02) 9221 1040",
     email: "jennifer@wallington-dummer.com.au",
     leadBio:
-      "Jennifer is an intellectual property lawyer specialising in trade marks, helping clients build, protect and enforce their brands across Australia and international markets.",
+      "Jennifer leads the trade marks practice at Wallington-Dummer. She has more than 15 years' experience in trade marks.",
     bio: [
-      "Jennifer works with clients at every stage of brand development — from initial clearance searches and trade mark filing through to complex multi-jurisdictional portfolio management and enforcement. She has a particular focus on helping businesses develop robust IP strategies that align with their commercial goals.",
-      "Her practice covers trade mark registration and prosecution, licensing, IP ownership transfers, domain name disputes and Australian Consumer Law advice. Jennifer advises clients across a range of industries including retail, technology, food and beverage, and professional services.",
+      "Jennifer works with clients at every stage of brand development — from initial availability searches and trade mark filings through to complex multi-jurisdictional portfolio management and enforcement. She has a particular focus on helping businesses develop robust trade mark and IP strategies that align with their commercial goals. Her practice covers trade mark registration and prosecution, licensing, IP ownership transfers, domain name disputes and Australian Consumer Law advice. Jennifer's clients are drawn from a diverse range of industries, including fashion, engineering, FMCG, information technology, hospitality and leisure. Jennifer also advises on brand protection, trade mark registrability and enforcement and acts in opposition and non-use proceedings before the Trade Marks Office.",
+      "Jennifer maintains strong and long-standing relationships with overseas and foreign associates. Jennifer frequently collaborates with these overseas colleagues to file, prosecute and enforce trade mark rights in Australia and in international jurisdictions.",
+      "Before joining Wallington-Dummer more than 10 years ago, Jennifer was an Intellectual Property Lawyer under the National Service Line Leader of the IP Team at a large national firm.",
       "Jennifer is admitted to practise in both NSW and Victoria and is a registered practitioner of the High Court of Australia.",
     ],
     expertise: [
@@ -108,7 +109,7 @@ export const team: TeamMember[] = [
   {
     name: "Sharon Yu",
     slug: "sharon-yu",
-    title: "Associate",
+    title: "Lawyer",
     role: "IP Lawyer & Patent and Trade Mark Attorney",
     credentials: "BAdvSci(Hons)(Chem)/LLB, MIPLaw",
     initials: "SY",
@@ -121,7 +122,7 @@ export const team: TeamMember[] = [
       "Sharon is an intellectual property lawyer and registered trade mark attorney with a background in chemistry, bringing both scientific and legal expertise to her IP practice.",
     bio: [
       "Sharon assists clients in obtaining trade mark registrations and patents in Australia and overseas, and has experience in drafting and reviewing patent licensing agreements. Her scientific background in chemistry gives her particular depth in life sciences, pharmaceutical and chemical patent matters.",
-      "Prior to joining Wallington Dummer, Sharon spent 4.5 years as a foreign attorney at a leading Japanese intellectual property law firm, where she rose to lead the foreign trade marks team. This experience has given her strong insight into international IP strategy, particularly across the Asia-Pacific region.",
+      "Prior to joining Wallington-Dummer, Sharon spent 4.5 years as a foreign attorney at a leading Japanese intellectual property law firm, where she rose to lead the foreign trade marks team. This experience has given her strong insight into international IP strategy, particularly across the Asia-Pacific region.",
       "Sharon's combined legal and scientific training allows her to advise clients with technical precision and commercial clarity — from start-ups seeking their first patent to established companies managing complex multi-jurisdictional IP portfolios.",
     ],
     expertise: [
