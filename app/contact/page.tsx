@@ -1,6 +1,5 @@
 import Navbar from "@/components/navbar";
 import Link from "next/link";
-import ContactForm from "./contact-form";
 import Footer from "@/components/footer";
 
 const offices = [
@@ -48,17 +47,17 @@ export default function ContactPage() {
       <section className="bg-surface py-16">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-12">
 
-          {/* Form */}
-          <div className="bg-white border border-line rounded-2xl p-8">
-            <div className="mb-7">
-              <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-2">
-                Send a message
-              </p>
-              <h2 className="font-serif text-[28px] font-normal text-navy">
-                How can we help you?
-              </h2>
-            </div>
-            <ContactForm />
+          {/* Map */}
+          <div className="rounded-2xl overflow-hidden border border-line h-[400px] md:h-auto">
+            <iframe
+              src="https://www.google.com/maps?q=66+Hunter+Street,+Sydney+NSW+2000,+Australia&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
 
           {/* Contact Details */}
@@ -125,34 +124,6 @@ export default function ContactPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MAPS */}
-      <section className="bg-surface border-t border-line py-16">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="mb-8">
-            <p className="text-xs tracking-[0.18em] uppercase text-blue font-semibold mb-2">
-              Our Offices
-            </p>
-            <h2 className="font-serif text-[32px] font-normal text-navy">
-              Find us in Sydney.
-            </h2>
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-navy mb-3">Suite 1005, 66 Hunter Street, Sydney NSW 2000</p>
-            <div className="rounded-xl overflow-hidden border border-line h-[360px]">
-              <iframe
-                src="https://www.google.com/maps?q=66+Hunter+Street,+Sydney+NSW+2000,+Australia&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
             </div>
           </div>
         </div>

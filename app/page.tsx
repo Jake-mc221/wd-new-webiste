@@ -4,25 +4,28 @@ import Footer from "@/components/footer";
 import { asset } from "@/lib/asset";
 
 const services = [
-  { num: "01", title: "Patents",     img: "/1.jpg",  dark: true,  href: "/services/patents"         },
-  { num: "02", title: "Trade Marks", img: "/2.png",  dark: false, href: "/services/trade-marks"     },
-  { num: "03", title: "Designs",     img: "/3.jpg",  dark: true,  href: "/services/designs"         },
-  { num: "04", title: "Copyright",   img: "/4.jpg",  dark: false, href: "/services"                 },
+  { num: "01", title: "Patents",     img: "/1new.jpg",  dark: true,  href: "/services/patents"         },
+  { num: "02", title: "Trade Marks", img: "/2new.jpg",  dark: false, href: "/services/trade-marks"     },
+  { num: "03", title: "Designs",     img: "/3new.webp", dark: true,  href: "/services/designs"         },
+  { num: "04", title: "Plant Breeder's Rights", img: "/4new.jpg",  dark: false, href: "/services/plant-breeders-rights" },
 ];
 
 const brandLogos = [
   "RA-LOGO.png",
-  "Stormseal-e1477032471234.png",
   "allshelter-logo-col.png",
-  "probus-logo.png",
+  "probus-icon-color.png",
   "pink-poppy-logo.png",
   "motoman-logo.png",
   "tuffa-logo.png",
   "nars-logo.png",
-  "kohnkes-own-logo.png",
-  "laura-mercier-logo.png",
-  "hikvision-logo.png",
-  "downloadsa.png",
+  "kohnkes.png",
+  "hikvision-security-cameras.png",
+  "goldfield-and-banks-logo.png",
+  "refresco.png",
+  "daon-logo.png",
+  "amoy-logo.png",
+  "dollar.jpg",
+  "ifs.png",
 ];
 
 const features = [

@@ -43,7 +43,7 @@ export default function FirmPage() {
               Our People
             </p>
             <h2 className="font-serif text-[32px] font-normal text-navy">
-              Experienced across all areas of IP.
+               Commercially relevant IP advice in a competitive environment.
             </h2>
           </div>
 

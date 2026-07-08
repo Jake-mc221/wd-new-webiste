@@ -25,11 +25,11 @@ export const team: TeamMember[] = [
     role: "Patent & Trade Mark Attorney",
     credentials: "BE(Elec), FIPTA",
     initials: "PD",
-    photo: "/peter2.png",
+    photo: "/peter-new.jpg",
     linkedin: "https://www.linkedin.com/in/peter-dummer-wallington/",
     location: "Sydney",
     phone: "(02) 9221 1040",
-    email: "peter@wallington-dummer.com.au",
+    email: "PDummer@wallington-dummer.com",
     leadBio:
       "Peter is one of Australia's most experienced patent and trade mark attorneys, with over 25 years of practice spanning industry, private practice and complex international IP strategy.",
     bio: [
@@ -51,16 +51,17 @@ export const team: TeamMember[] = [
     ],
     qualifications: [
       "Bachelor of Engineering (Electrical), University of New South Wales",
-      "Registered Australian Patent Attorney",
+      "Registered Australian Patent & Trade Mark Attorney",
       "Registered New Zealand Patent Attorney",
-      "Registered Australian Trade Mark Attorney",
+  
     ],
     memberships: [
       "Fellow, Institute of Patent and Trade Mark Attorneys of Australia (FIPTA)",
       "International Trade Mark Association (INTA)",
       "FICPI (Fédération Internationale des Conseils en Propriété Intellectuelle)",
-      "ANIPPI (Australian Group of AIPPI)",
+      "AIPPI (Australian Group of AIPPI)",
       "Intellectual Property Society of Australia and New Zealand (IPSANZ)",
+      "IPTA (International Trademark Association)"
     ],
   },
   {
@@ -70,11 +71,11 @@ export const team: TeamMember[] = [
     role: "Intellectual Property Lawyer",
     credentials: "BA/LLB, GradDipLP",
     initials: "JS",
-    photo: "/jennifer-song.png",
+    photo: "/jen-new.jpg",
     linkedin: "https://www.linkedin.com/in/jennifer-song-ip/",
     location: "Sydney",
     phone: "(02) 9221 1040",
-    email: "jennifer@wallington-dummer.com.au",
+    email: "JSong@wallington-dummer.com",
     leadBio:
       "Jennifer leads the trade marks practice at Wallington-Dummer. She has more than 15 years' experience in trade marks.",
     bio: [
@@ -87,12 +88,11 @@ export const team: TeamMember[] = [
       "Trade Marks",
       "Brand Protection",
       "Trade Mark Prosecution",
-      "IP Licensing",
       "Domain Name Disputes",
       "IP Enforcement",
       "Australian Consumer Law",
       "Global Trade Mark Portfolio Management",
-      "IP Risk Management",
+      "Trade Mark Searches"
     ],
     qualifications: [
       "Bachelor of Arts and Bachelor of Laws (BA/LLB), Monash University, Melbourne",
@@ -104,6 +104,8 @@ export const team: TeamMember[] = [
       "Law Society of NSW",
       "Admitted, Supreme Court of Victoria",
       "Intellectual Property Society of Australia and New Zealand (IPSANZ)",
+      "International Trade Mark Association (INTA)",
+      "IPTA (International Trademark Association)",
     ],
   },
   {
@@ -113,11 +115,11 @@ export const team: TeamMember[] = [
     role: "IP Lawyer & Patent and Trade Mark Attorney",
     credentials: "BAdvSci(Hons)(Chem)/LLB, MIPLaw",
     initials: "SY",
-    photo: "/sharon-yu.png",
+    photo: "/sharon-new.jpg",
     linkedin: "https://www.linkedin.com/in/sharon-yu-ip/",
     location: "Sydney",
     phone: "(02) 9221 1040",
-    email: "sharon@wallington-dummer.com.au",
+    email: "syu@wallington-dummer.com",
     leadBio:
       "Sharon is an intellectual property lawyer and registered trade mark attorney with a background in chemistry, bringing both scientific and legal expertise to her IP practice.",
     bio: [

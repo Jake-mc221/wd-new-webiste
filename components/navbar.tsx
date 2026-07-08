@@ -27,7 +27,7 @@ export default function Navbar() {
           <img
             src={asset("/logo3.png")}
             alt="Wallington-Dummer"
-            className="h-12"
+            className="h-16"
           />
         </Link>
 
