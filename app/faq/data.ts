@@ -69,7 +69,7 @@ export const faqs: FaqCategory[] = [
       },
       {
         q: "How long does trade mark protection last?",
-        a: "A registered trade mark in Australia lasts for 10 years from the filing date and can be renewed indefinitely in 10-year increments, provided it remains in use. Unlike patents, trade marks can theoretically be protected forever — making early registration and consistent use particularly valuable.",
+        a: "A registered trade mark in Australia lasts for 10 years from the filing date and can be renewed perpetually every 10 years. Unlike patents, trade marks can theoretically be protected forever — making early registration and consistent use particularly valuable.",
       },
     ],
   },
