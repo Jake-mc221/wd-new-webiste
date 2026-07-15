@@ -11,7 +11,7 @@ export const faqs: FaqCategory[] = [
       },
       {
         q: "Do you offer a free initial consultation?",
-        a: "Yes. Wallington-Dummer offers a complimentary initial consultation for all new clients. This gives you the opportunity to discuss your situation with one of our attorneys, understand your options, and receive an honest assessment of whether and how IP protection applies to your circumstances — at no cost and with no obligation.",
+        a: "Yes. Wallington-Dummer offers a complimentary initial consultation for all new clients. This gives you the opportunity to discuss your situation with one of our attorneys and lawyers, understand your options, and receive an honest assessment of whether and how IP protection applies to your circumstances — at no cost and with no obligation.",
       },
       {
         q: "How do I know which type of IP protection I need?",
@@ -19,7 +19,7 @@ export const faqs: FaqCategory[] = [
       },
       {
         q: "Can you help with IP protection outside Australia?",
-        a: "Yes. We regularly assist clients with international IP protection through direct national filings, the Patent Cooperation Treaty (PCT) for patents, the Madrid Protocol for trade marks, and the Hague Agreement for designs. We also work with a trusted global network of foreign IP attorneys to coordinate filings in jurisdictions outside our direct practice areas.",
+        a: "Yes. We regularly assist clients with international IP protection through direct national filings, the Patent Cooperation Treaty (PCT) for patents, the Madrid Protocol for trade marks, and the Hague Agreement for designs. We also work with a trusted global network of foreign IP attorneys to coordinate filings in jurisdictions outside of Australia and New Zealand.",
       },
     ],
   },

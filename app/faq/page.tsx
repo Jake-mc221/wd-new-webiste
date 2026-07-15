@@ -30,7 +30,7 @@ export default function FaqPage() {
         </div>
         <div className="border-t border-white/10 py-5">
           <p className="text-xs text-white/60 text-center tracking-[0.12em]">
-            IP AND COMMERCIAL LAWYERS · SYDNEY CBD
+            SYDNEY CBD
           </p>
         </div>
       </section>
@@ -70,18 +70,12 @@ export default function FaqPage() {
                 Our team is happy to answer any questions not covered here.
                 Initial consultations are complimentary.
               </p>
-              <a
-                href="mailto:mail2@wallington-dummer.com"
+              <Link
+                href="/contact"
                 className="block text-center bg-white text-navy px-5 py-2.5 rounded-md text-sm font-semibold hover:bg-blue-light transition-colors"
               >
-                Email Us
-              </a>
-              <a
-                href="tel:+61292211040"
-                className="block text-center border border-white/20 text-white px-5 py-2.5 rounded-md text-sm mt-2.5 hover:border-white/50 transition-colors"
-              >
-                (02) 9221 1040
-              </a>
+                Contact Us
+              </Link>
             </div>
 
             <div className="border border-line rounded-xl p-6">

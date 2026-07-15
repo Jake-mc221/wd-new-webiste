@@ -38,7 +38,7 @@ export default function ContactPage() {
         </div>
         <div className="border-t border-white/10 py-5">
           <p className="text-xs text-white/60 text-center tracking-[0.12em]">
-            IP AND COMMERCIAL LAWYERS · SYDNEY CBD
+            SYDNEY CBD
           </p>
         </div>
       </section>
